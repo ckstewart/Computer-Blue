@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    <style>
+    
+    .navbar-brand {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        border: 0.25em double black;
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .img-responsive {
+        margin: auto;
+        margin-top: 90px;
+    }
+        
+        
+    
+    .detailBox {
+    width:320px;
+    border:1px solid #bbb;
+    margin:50px;
+    position: absolute;
+    right: 35%;
+        }
+        .titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+        .titleBox label{
+  color:#444;
+  margin:0;
+  display:inline-block;
+}
+
+        .commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}
+        .commentBox .form-group:first-child, .actionBox         .form-group:first-child {
+    width:80%;
+}
+        .commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+        .actionBox .form-group * {
+    width:100%;
+}
+        .taskDescription {
+    margin-top:10px 0;
+}
+        .commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+    overflow:auto;
+}
+        .commentList li {
+    margin:0;
+    margin-top:10px;
+}
+        .commentList li > div {
+    display:table-cell;
+}
+        .commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+        .commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+        .commentText p {
+    margin:0;
+}
+        .sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+        .actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+} 
+        
+        .china {
+        position: absolute;
+            right: -20%;
+            color: blue;
+        }
+        
+    
+</style>
+</head>
+<body>
+    
+    
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+                <a href="#" class="navbar-brand">Travel Advisor</a></div>
+        
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            
+                <li><a href="test.html">Home</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Locations<span class="caret"></span></a>
+                
+                    <ul class="dropdown-menu">
+                        <li><a href="Sports.html">Sports</a></li>
+                        <li><a href="Restaurants.html">Restaurants</a></li>
+                        <li><a href="Theme%20Park.html">Theme Park</a></li>
+                        <li><a href="Sight%20Seeing.html">Sight Seeing</a></li>
+                        <li><a href="Outdoor%20Activities.html">Outdoor Activities</a></li>
+                        <li><a href="Theater.html">Theater</a></li>
+                        <li><a href="Art%20and%20History.html">Art and History</a></li>
+                        <li><a href="Recreation.html">Recreation</a></li>
+                        <li><a href="Shopping.html">Shopping</a></li>
+                        <li><a href="Night%20Life.html">Night Life</a></li>
+                    </ul>  
+                    </li>
+                
+                <li><a href="#">Log In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+    
+                <li class = "china"><a href = "">Currently Viewing: China</a></li>
+            </ul>
+            
+        </div>
+    </div> 
+</div>
+    
+    
+    
+    <!-- Carousel -->
+    
+    <div id = "myCarousel1" class = "carousel slide">
+    
+  <ol class = "carousel-indicators">
+    <li data-target = "#myCarousel1" data-slide-to = "0" class = "active"></li>
+    <li data-target = "#myCarousel1" data-slide-to = "1"></li>
+      <li data-target = "#myCarousel1" data-slide-to = "2"></li>
+    </ol>
+
+        
+      <div class = "carousel-inner">
+          
+        <div class = "item active">
+          <img src = "img/beijing.jpg" alt = "Beijing" class = "img-responsive">
+        </div>
+          
+        <div class = "item">
+          <img src = "img/greatwall.jpg" alt = "Great Wall" class = "img-responsive">
+        </div>
+          
+          <div class = "item">
+          <img src = "img/peak.jpg" alt = "Victoria's Peak" class = "img-responsive">
+        </div>
+          
+    </div>
+    
+    <a class = "carousel-control left" href = "#myCarousel1" data-slide = "prev"></a>
+    
+    <span class = "icon-prev"></span>
+    
+    <a class = "carousel-control right" href = "#myCarousel1" data-slide = "next"></a>
+    
+    <span class = "icon-next"></span>
+    
+</div>
+    
+    
+    
+    
+          <!-- Comment Section -->
+    
+    <div class="detailBox">
+    <div class="titleBox">
+      <label>Reviews</label>
+        <button type="button" class="close" aria-hidden="true">&times;</button>
+    </div>
+    <div class="commentBox">
+        
+    </div>
+    <div class="actionBox">
+        <ul class="commentList">
+            <li>
+                <div class="commenterImage">
+                  <img src="http://lorempixel.com/50/50/people/6" />
+                </div>
+                <div class="commentText">
+                    <p class="">My father and I took a walk along the Great Wall of China.  To experience the history was breathtaking, and all the people we met were tremendously generous.</p> <span class="date sub-text">on April 16th, 2015</span>
+
+                </div>
+            </li>
+            <li>
+                <div class="commenterImage">
+                  <img src="http://lorempixel.com/50/50/people/7"/>
+                </div>
+                <div class="commentText">
+                    <p class="">My husband and I went to see Victoria's Peak.  The view of Hong Kong was beautiful at night with the city lit up.</p> <span class="date sub-text">on June 9th, 2015</span>
+
+                </div>
+            </li>
+            <li>
+                <div class="commenterImage">
+                  <img src="http://lorempixel.com/50/50/people/9" />
+                </div>
+                <div class="commentText">
+                    <p class="">My brother and I went to see Beijing and experience the culture.  Completely different where we are from and gained a lot of perspective.</p> <span class="date sub-text">on June 24th, 2014</span>
+
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Your comments" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+
+</body>
+</html>
