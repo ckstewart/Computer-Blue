@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<title>Bootstrap Example</title>
@@ -65,9 +66,10 @@
 			.commentBox {
 			padding:10px;
 			border-top:1px dotted #bbb;
+            width:60%;
 			}
 			.commentBox .form-group:first-child, .actionBox         .form-group:first-child {
-			width:80%;
+			width:60%;
 			}
 			.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
 			width:18%;
@@ -256,23 +258,23 @@
 								</div>
 							</li>
 						</ul>
-						<form class="form-inline" role="form">
-							<div class="form-group">
-								<input class="form-control" type="text" placeholder="Your comments" />
-							</div>
-							<div class="form-group">
-								<div class="dropup">
-									<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Rate</button>
-									<ul class="dropdown-menu" role="menu">
-										<li><a role="menuitem">1</a></li>
-										<li><a role="menuitem">2</a></li>
-										<li><a role="menuitem">3</a></li>
-										<li><a role="menuitem">4</a></li>
-										<li><a role="menuitem">5</a></li>
-									</ul>
-								</div>
-								<button class="btn btn-default">Add</button>
-							</div>
+						<form class="form-inline" role="form" method="get" action="Sports.html">
+							<div class="form-group col-xs-2">
+								<input class="form-control" name="comment" width="50" type="text" placeholder="Your comments" />
+                            </div>
+                            <div class="col-xs-3">
+								<span class="dropup">
+                                    <label for="sel1"><div class="glyphicon glyphicon-star"></div></label>
+                                    <select class="form-control" id="sel1" name="sel1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+								</span>
+								<button class="btn btn-default" type="submit">Add</button>
+                            </div>
 						</form>
 					</div>
 					<!-- Magic Reviews -->
@@ -453,4 +455,4 @@
 		</div>
 		<p></p>
 	</body>
-</html>
+</html
