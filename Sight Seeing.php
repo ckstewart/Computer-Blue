@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    
+    <?php 
+    
+    require_once "connectdb.php";
+ require_once "connectdb.php";
+
+        if(isset($_POST['comment']) && isset($_POST['rate']) && isset($_POST['event']))
+            {
+                addComment($_POST['comment'],$_POST['event'],$_POST['rate'],$db);
+            }
+
+getcomments($db);
+
+    ?>
+    
 	<head>
-		<title>Bootstrap Example</title>
+		<title>Travel Advisor</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -120,10 +135,15 @@
 			right: -20%;
 			color: blue;
 			}
+            #myCarousel3 {     background:url(http://divinelifestyle.com/wp-content/uploads/2014/07/Discovery-Cove-Grand-Reef.jpg);
+                
+                
+            }
 		</style>
 	</head>
 	<body>
 		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -135,24 +155,38 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="Home.html">Home</a></li>
+						<li><a href="Home.php">Home</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Attractions & Activities<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="Sports.html">Sports</a></li>
-								<li><a href="Restaurants.html">Restaurants</a></li>
-								<li><a href="Theme%20Park.html">Theme Park</a></li>
-								<li><a href="Sight%20Seeing.html">Sight Seeing</a></li>
-								<li><a href="Outdoor%20Activities.html">Outdoor Activities</a></li>
-								<li><a href="Theater.html">Theater</a></li>
-								<li><a href="Art%20and%20History.html">Art and History</a></li>
-								<li><a href="Recreation.html">Recreation</a></li>
-								<li><a href="Shopping.html">Shopping</a></li>
-								<li><a href="Night%20Life.html">Night Life</a></li>
+								<li><a href="Sports.php">Sports</a></li>
+								<li><a href="Restaurants.php">Restaurants</a></li>
+								<li><a href="Theme%20Park.php">Theme Park</a></li>
+								<li><a href="Sight%20Seeing.php">Sight Seeing</a></li>
+								<li><a href="Outdoor%20Activities.php">Outdoor Activities</a></li>
+								<li><a href="Theater.php">Theater</a></li>
+								<li><a href="Art%20and%20History.php">Art and History</a></li>
+								<li><a href="Recreation.php">Recreation</a></li>
+								<li><a href="Shopping.php">Shopping</a></li>
+								<li><a href="Night%20Life.php">Night Life</a></li>
+								<li><a href="booking.php">Book Hotel</a></li>
 							</ul>
 						</li>
-						<li><a href="Login.html">Log In</a></li>
-						<li><a href="Signup.html">Sign Up</a></li>
+						<li>
+                            <?php if(!$_SESSION['NAME']) {?>
+                                <a href="Login.php">Log In</a>
+                            <?php } ?>
+                            <?php if($_SESSION['NAME']) {?>
+                                <a href="profile.php">Profile</a>
+                        <li><a href="logout.php">Log Out</a></li>
+                            <?php } ?>
+                        </li>
+                        <li>
+                            <?php 
+                            if (!$_SESSION['NAME']) {?> 
+                                <a href="Signup.php">Sign Up</a> <?php }
+                            ?>
+                        </li>
 						<li class = "aus"><a href = "">Currently Viewing: Sight Seeing</a></li>
 					</ul>
 				</div>
@@ -257,22 +291,63 @@
 									</span>
 								</div>
 							</li>
+                            <?php 
+
+                                //$orlando;
+//$_SESSION['Orlando Magic']
+    getComments($db);
+
+                            
+                                while($magic = $_SESSION['Discovery Cove']->fetch_assoc())
+                                    {
+                                    $posteremail = $magic['pemail'];
+                                    $sql = "SELECT photo from users where email = '$posteremail'";
+                                    $result = mysqli_query($db,$sql);
+                                    $photo = $result->fetch_assoc();
+                                    $posterimg = $photo['photo'];
+                                    
+                                    echo "<li> <div class='commenterImage'> <img src='$posterimg' /></div>";
+                                    
+                                    echo '<div class="commentText"> <p>'.$magic['user'].": ". $magic['comment'].'</p>';
+                                    
+                                    echo '<span class="date sub-text">'.$magic['cdate'];
+                                    
+                                    echo '<div class="glyphicon glyphicon-star">'.$magic['stars'].'</div> </span> </div> ';
+                                    
+                                    echo "</li>";
+                                    
+                                }
+
+                            ?>
 						</ul>
-						<form class="form-inline" role="form" method="get" action="Sports.html">
+						<form class="form-inline" role="form" method="post" action="Sight%20Seeing.php">
+                            
                             <div class="form-group">
-								<input class="form-control" name="comment" type="text" placeholder="Your comments" />
+								<input class="form-control" name="comment" type="textbox" placeholder="Your comments" size="200">
                             </div>
                             <div class="form-group">
-								<button class="btn btn-default" type="submit">Add</button>
+								
+                                <select class="form-control" id="rate1" name="event">
+                                    <option value="Discovery Cove">Discovery Cove</option>
+                                    <option value="Lake Eola Park">Lake Eola Park</option>
+                                    <option value="Kelly Park">Kelly Park</option>
+                                    <option value="Orlando Balloon Rides">Orlando Balloon Rides</option>
+                                    <option value="Gatorland">Gatorland</option>
+                                </select>
                             </div>
-                                <select class="form-control" id="rate1" name="rate1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                            
+                            <div class="form-group">
+								
+                            </div>
+                                <select class="form-control" id="rate1" name="rate">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                                 <label for="sel1"><div class="glyphicon glyphicon-star"></div></label>
+                            <button class="btn btn-default" type="submit">Add</button>
 						</form>
 					</div>
 					<!-- Magic Reviews -->
@@ -308,6 +383,34 @@
 									<span class="date sub-text">on May 12th, 2014</span>
 								</div>
 							</li>
+                            <?php 
+
+                                //$orlando;
+//$_SESSION['Orlando Magic']
+    getComments($db);
+
+                            
+                                while($magic = $_SESSION['Lake Eola Park']->fetch_assoc())
+                                    {
+                                    $posteremail = $magic['pemail'];
+                                    $sql = "SELECT photo from users where email = '$posteremail'";
+                                    $result = mysqli_query($db,$sql);
+                                    $photo = $result->fetch_assoc();
+                                    $posterimg = $photo['photo'];
+                                    
+                                    echo "<li> <div class='commenterImage'> <img src='$posterimg' /></div>";
+                                    
+                                    echo '<div class="commentText"> <p>'.$magic['user'].": ". $magic['comment'].'</p>';
+                                    
+                                    echo '<span class="date sub-text">'.$magic['cdate'];
+                                    
+                                    echo '<div class="glyphicon glyphicon-star">'.$magic['stars'].'</div> </span> </div> ';
+                                    
+                                    echo "</li>";
+                                    
+                                }
+
+                            ?>
 						</ul>
 						<form class="form-inline" role="form">
 							<div class="form-group">
@@ -358,22 +461,63 @@
 									<span class="date sub-text">on May 12th, 2014</span>
 								</div>
 							</li>
+                            <?php 
+
+                                //$orlando;
+//$_SESSION['Orlando Magic']
+    getComments($db);
+
+                            
+                                while($magic = $_SESSION['Kelly Park']->fetch_assoc())
+                                    {
+                                    $posteremail = $magic['pemail'];
+                                    $sql = "SELECT photo from users where email = '$posteremail'";
+                                    $result = mysqli_query($db,$sql);
+                                    $photo = $result->fetch_assoc();
+                                    $posterimg = $photo['photo'];
+                                    
+                                    echo "<li> <div class='commenterImage'> <img src='$posterimg' /></div>";
+                                    
+                                    echo '<div class="commentText"> <p>'.$magic['user'].": ". $magic['comment'].'</p>';
+                                    
+                                    echo '<span class="date sub-text">'.$magic['cdate'];
+                                    
+                                    echo '<div class="glyphicon glyphicon-star">'.$magic['stars'].'</div> </span> </div> ';
+                                    
+                                    echo "</li>";
+                                    
+                                }
+
+                            ?>
 						</ul>
-						<form class="form-inline" role="form">
-							<div class="form-group">
-								<input class="form-control" type="text" placeholder="Your comments" />
-							</div>
-							<div class="form-group">
-								<button class="btn btn-default">Add</button>
-							</div>
-                            <select class="form-control" id="rate1" name="rate1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+						<form class="form-inline" role="form" method="post" action="Sight%20Seeing.php">
+                            
+                            <div class="form-group">
+								<input class="form-control" name="comment" type="textbox" placeholder="Your comments" size="200">
+                            </div>
+                            <div class="form-group">
+								
+                                <select class="form-control" id="rate1" name="event">
+                                    <option value="Discovery Cove">Discovery Cove</option>
+                                    <option value="Lake Eola Park">Lake Eola Park</option>
+                                    <option value="Kelly Park">Kelly Park</option>
+                                    <option value="Orlando Balloon Rides">Orlando Balloon Rides</option>
+                                    <option value="Gatorland">Gatorland</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+								
+                            </div>
+                                <select class="form-control" id="rate1" name="rate">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                                 <label for="sel1"><div class="glyphicon glyphicon-star"></div></label>
+                            <button class="btn btn-default" type="submit">Add</button>
 						</form>
 					</div>
 				</div>
@@ -408,22 +552,63 @@
 									<span class="date sub-text">on May 12th, 2014</span>
 								</div>
 							</li>
+                            <?php 
+
+                                //$orlando;
+//$_SESSION['Orlando Magic']
+    getComments($db);
+
+                            
+                                while($magic = $_SESSION['Orlando Balloon Rides']->fetch_assoc())
+                                    {
+                                    $posteremail = $magic['pemail'];
+                                    $sql = "SELECT photo from users where email = '$posteremail'";
+                                    $result = mysqli_query($db,$sql);
+                                    $photo = $result->fetch_assoc();
+                                    $posterimg = $photo['photo'];
+                                    
+                                    echo "<li> <div class='commenterImage'> <img src='$posterimg' /></div>";
+                                    
+                                    echo '<div class="commentText"> <p>'.$magic['user'].": ". $magic['comment'].'</p>';
+                                    
+                                    echo '<span class="date sub-text">'.$magic['cdate'];
+                                    
+                                    echo '<div class="glyphicon glyphicon-star">'.$magic['stars'].'</div> </span> </div> ';
+                                    
+                                    echo "</li>";
+                                    
+                                }
+
+                            ?>
 						</ul>
-						<form class="form-inline" role="form">
-							<div class="form-group">
-								<input class="form-control" type="text" placeholder="Your comments" />
-							</div>
-							<div class="form-group">
-								<button class="btn btn-default">Add</button>
-							</div>
-                            <select class="form-control" id="rate1" name="rate1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+						<form class="form-inline" role="form" method="post" action="Sight%20Seeing.php">
+                            
+                            <div class="form-group">
+								<input class="form-control" name="comment" type="textbox" placeholder="Your comments" size="200">
+                            </div>
+                            <div class="form-group">
+								
+                                <select class="form-control" id="rate1" name="event">
+                                    <option value="Discovery Cove">Discovery Cove</option>
+                                    <option value="Lake Eola Park">Lake Eola Park</option>
+                                    <option value="Kelly Park">Kelly Park</option>
+                                    <option value="Orlando Balloon Rides">Orlando Balloon Rides</option>
+                                    <option value="Gatorland">Gatorland</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+								
+                            </div>
+                                <select class="form-control" id="rate1" name="rate">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                                 <label for="sel1"><div class="glyphicon glyphicon-star"></div></label>
+                            <button class="btn btn-default" type="submit">Add</button>
 						</form>
 					</div>
 				</div>
@@ -462,22 +647,63 @@
 									</span>
 								</div>
 							</li>
+                            <?php 
+
+                                //$orlando;
+//$_SESSION['Orlando Magic']
+    getComments($db);
+
+                            
+                                while($magic = $_SESSION['Gatorland']->fetch_assoc())
+                                    {
+                                    $posteremail = $magic['pemail'];
+                                    $sql = "SELECT photo from users where email = '$posteremail'";
+                                    $result = mysqli_query($db,$sql);
+                                    $photo = $result->fetch_assoc();
+                                    $posterimg = $photo['photo'];
+                                    
+                                    echo "<li> <div class='commenterImage'> <img src='$posterimg' /></div>";
+                                    
+                                    echo '<div class="commentText"> <p>'.$magic['user'].": ". $magic['comment'].'</p>';
+                                    
+                                    echo '<span class="date sub-text">'.$magic['cdate'];
+                                    
+                                    echo '<div class="glyphicon glyphicon-star">'.$magic['stars'].'</div> </span> </div> ';
+                                    
+                                    echo "</li>";
+                                    
+                                }
+
+                            ?>
 						</ul>
-						<form class="form-inline" role="form">
-							<div class="form-group">
-								<input class="form-control" type="text" placeholder="Your comments" />
-							</div>
-							<div class="form-group">
-								<button class="btn btn-default">Add</button>
-							</div>
-                            <select class="form-control" id="rate1" name="rate1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+						<form class="form-inline" role="form" method="post" action="Sight%20Seeing.php">
+                            
+                            <div class="form-group">
+								<input class="form-control" name="comment" type="textbox" placeholder="Your comments" size="200">
+                            </div>
+                            <div class="form-group">
+								
+                                <select class="form-control" id="rate1" name="event">
+                                    <option value="Discovery Cove">Discovery Cove</option>
+                                    <option value="Lake Eola Park">Lake Eola Park</option>
+                                    <option value="Kelly Park">Kelly Park</option>
+                                    <option value="Orlando Balloon Rides">Orlando Balloon Rides</option>
+                                    <option value="Gatorland">Gatorland</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+								
+                            </div>
+                                <select class="form-control" id="rate1" name="rate">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                                 <label for="sel1"><div class="glyphicon glyphicon-star"></div></label>
+                            <button class="btn btn-default" type="submit">Add</button>
 						</form>
 					</div>
 				</div>

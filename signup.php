@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html>
+
 <html lang="en">
+    
+    <?php 
+    
+    require_once "connectdb.php";
+
+        if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']))
+            {
+                signup($_POST['name'],$_POST['email'],$_POST['password'],$db);
+            echo "called function";
+            }
+
+    ?>
+    
 <head>
-  <title>Bootstrap Example</title>
+  <title>Travel Advisor</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -148,9 +161,13 @@
             position: relative;
             left: 50%;
             }
+    fieldset{width:50%;margin-left:auto;margin-right:auto;}
 		</style>
 </head>
 	<body>
+        
+        <?php if (!$_SESSION['NAME']) { ?>
+        
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -163,60 +180,69 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="Home.html">Home</a></li>
+						<li><a href="Home.php">Home</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Attractions & Activities<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="Sports.html">Sports</a></li>
-								<li><a href="Restaurants.html">Restaurants</a></li>
-								<li><a href="Theme%20Park.html">Theme Park</a></li>
-								<li><a href="Sight%20Seeing.html">Sight Seeing</a></li>
-								<li><a href="Outdoor%20Activities.html">Outdoor Activities</a></li>
-								<li><a href="Theater.html">Theater</a></li>
-								<li><a href="Art%20and%20History.html">Art and History</a></li>
-								<li><a href="Recreation.html">Recreation</a></li>
-								<li><a href="Shopping.html">Shopping</a></li>
-								<li><a href="Night%20Life.html">Night Life</a></li>
+								<li><a href="Sports.php">Sports</a></li>
+								<li><a href="Restaurants.php">Restaurants</a></li>
+								<li><a href="Theme%20Park.php">Theme Park</a></li>
+								<li><a href="Sight%20Seeing.php">Sight Seeing</a></li>
+								<li><a href="Outdoor%20Activities.php">Outdoor Activities</a></li>
+								<li><a href="Theater.php">Theater</a></li>
+								<li><a href="Art%20and%20History.php">Art and History</a></li>
+								<li><a href="Recreation.php">Recreation</a></li>
+								<li><a href="Shopping.php">Shopping</a></li>
+								<li><a href="Night%20Life.php">Night Life</a></li>
 							</ul>
 						</li>
-						<li><a href="Login.html">Log In</a></li>
-						<li><a href="Signup.html">Sign Up</a></li>
-						<li class = "aus"><a href = "">Welcome to TravelAdvisor!</a></li>
+						<li>
+                            <?php if(!$_SESSION['NAME']) {?>
+                                <a href="Login.php">Log In</a>
+                            <?php } ?>
+                            <?php if($_SESSION['NAME']) {?>
+                                <a href="logout.php">Log Out</a>
+                            <?php } ?>
+                        </li>
+						<li><a href="Signup.php">Sign Up</a></li>
+						<li class = "aus"><a href = "">Currently Viewing: Art and History</a></li>
 					</ul>
 				</div>
 			</div>
 		</div> 
     
     
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="post" action="signup.php">
   <fieldset>
-    <legend id = "sign">Sign Up for Travel Advisor!</legend>
-    <div class="form-group">
-      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputEmail" class="col-lg-2 control-label">Name</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputUser" placeholder="Name">
-      </div>
-    </div>
+      
+    <legend id = "sign" align="center">Sign Up for Travel Advisor!</legend>
+      
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="inputEmail" placeholder="Email" name="email" style="width:300px">
+                </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="inputEmail" class="col-lg-2 control-label">Name</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputUser" placeholder="Name" name="name" style="width:300px">
+              </div>
+        </div>
+      
     <div class="form-group">
       <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-      <div class="col-lg-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-          
-          
+            <div class="col-lg-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" style="width:300px">
+           
         <!--<div class="checkbox">
           <label>
             <input type="checkbox"> Checkbox
           </label>
-        </div>-->
+        </div>-->     
           
-          
-      </div>
+            </div>
     </div>
     <div class="form-group">
         
@@ -277,6 +303,10 @@
     </div>
   </fieldset>
 </form>
+    
+    <?php } if($_SESSION['NAME']){header('Location: home.php');}?>
+    
+    
 
 </body>
 </html>

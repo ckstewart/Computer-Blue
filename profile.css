@@ -1,0 +1,11 @@
+body{background-color: black;}
+
+#feed{background-color: white; width: 80%; margin-left: auto; margin-right: auto;border-radius: 10px;}
+
+#main{margin-top: 100px; margin-left: auto; margin-right: auto; width: 140px; }
+
+#name{color: White; font-size: 50px; width: 100%; text-align: center;}
+
+#bookings{width: 50%; background-color: white;float: left;color: black; margin-top: -50px;padding: 10px;text-align: center;margin-bottom: 10px; border-radius: 10px;}
+#comments{width: 50%; background-color: white;float: right;color: black;margin-top: -50px;padding: 10px; text-align: center;margin-bottom: 10px; border-radius: 10px;}
+
