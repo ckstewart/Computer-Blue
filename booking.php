@@ -65,55 +65,7 @@ if(isset($_POST['nickelodeonrate']))
     </head>
     
     <body>
-        <div class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a href="#" class="navbar-brand">Travel Advisor</a>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="Home.php">Home</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Attractions & Activities<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="Sports.php">Sports</a></li>
-								<li><a href="Restaurants.php">Restaurants</a></li>
-								<li><a href="Theme%20Park.php">Theme Park</a></li>
-								<li><a href="Sight%20Seeing.php">Sight Seeing</a></li>
-								<li><a href="Outdoor%20Activities.php">Outdoor Activities</a></li>
-								<li><a href="Theater.php">Theater</a></li>
-								<li><a href="Art%20and%20History.php">Art and History</a></li>
-								<li><a href="Recreation.php">Recreation</a></li>
-								<li><a href="Shopping.php">Shopping</a></li>
-								<li><a href="Night%20Life.php">Night Life</a></li>
-								<li><a href="booking.php">Book Hotel</a></li>
-							</ul>
-						</li>
-						<li>
-                            <?php if(!$_SESSION['NAME']) {?>
-                                <a href="Login.php">Log In</a>
-                            <?php } ?>
-                            <?php if($_SESSION['NAME']) {?>
-                                <a href="profile.php">Profile</a>
-                        <li><a href="logout.php">Log Out</a></li>
-                            <?php } ?>
-                        </li>
-                        <li>
-                            <?php 
-                            if (!$_SESSION['NAME']) {?> 
-                                <a href="signup.php">Sign Up</a> <?php }
-                            ?>
-                        </li>
-						<li class = "aus"><a href = "">Currently Viewing: Booking</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+        <?php include("Navbar.php");?>
     <!-- End of nav -->
         <br><br>
     <h1 align="center">Welcome to the Booking Page</h1>
@@ -132,7 +84,7 @@ if(isset($_POST['nickelodeonrate']))
                 <h5>Travel Advisor price 100$/night</h5>
                 <h5>Regular price 100$/night</h5>
                 <h5>Travel Advisor price 100$/night</h5>
-                <form id="rate" method="post" action="booking.php">
+                <form id="rate" method="post" action="Booking.php">
                 <?php 
                     $sql = "select * from bookings where bemail = '$email' and hotel = 'Rosen Inn at Pointe Orlando'";
                     $booked = mysqli_query($db,$sql);
@@ -154,7 +106,7 @@ $booked=$booked->fetch_assoc();
 
                 ?>
                 </form>
-                <form method="post" action="booking.php">
+                <form method="post" action="Booking.php">
                 <input type="submit" name="rosenInn" value="Book Now" >
                 </form>
                 
@@ -174,7 +126,7 @@ $booked=$booked->fetch_assoc();
             <li></li>
                 <h5>Regular price 300$/night</h5>
                 <h5>Travel Advisor price 260$/night</h5>
-                <form id="rate" method="post" action="booking.php">
+                <form id="rate" method="post" action="Booking.php">
                 <?php 
                     $sql = "select * from bookings where bemail = '$email' and hotel = 'Hard Rock Hotel At Universal Orlando Resort'";
                     $booked2 = mysqli_query($db,$sql);
@@ -196,7 +148,7 @@ $booked2=$booked2->fetch_assoc();
 
                 ?>
                 </form>
-                <form method="post" action="booking.php">
+                <form method="post" action="Booking.php">
                 <input type="submit" name="hardRock" value="Book Now" >
                 </form>
             </ul>
@@ -215,7 +167,7 @@ $booked2=$booked2->fetch_assoc();
             <li></li>
                 <h5>Regular price 200$/night</h5>
                 <h5>Travel Advisor price 147$/night</h5>
-                <form id="rate" method="post" action="booking.php">
+                <form id="rate" method="post" action="Booking.php">
                 <?php 
                     $sql = "select * from bookings where bemail = '$email' and hotel = 'Nickelodeon Suites Resort'";
                     $booked3 = mysqli_query($db,$sql);
@@ -237,7 +189,7 @@ $booked3=$booked3->fetch_assoc();
 
                 ?>
                 </form>
-                <form method="post" action="booking.php">
+                <form method="post" action="Booking.php">
                 <input type="submit" name="nickelodeon" value="Book Now" >
                 </form>
             </ul>
