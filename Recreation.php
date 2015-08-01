@@ -210,42 +210,6 @@ getcomments($db);
 					<!--Magic Reviews -->
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The Orlando Magic are my favorite basketball team!</p>
-									<span class="date sub-text">
-										on March 5th, 2015
-										<div class="glyphicon glyphicon-star">4</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Go Oladipo I'm from Indiana and he's a hometown hero.</p>
-									<span class="date sub-text">
-										on April 13th, 2015
-										<div class="glyphicon glyphicon-star">3</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Vucevic should have been an all-star!</p>
-									<span class="date sub-text">
-										on May 12th, 2014
-										<div class="glyphicon glyphicon-star">5</div>
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -311,33 +275,6 @@ getcomments($db);
 					<p>Activity-based recreation facility with a tennis center; family swimming pool; afterschool and summer programs. Swimming is $2 per person per day or $60 per person for an annual pass.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The UCF Knights football team is my favorite college sports team to follow!</p>
-									<span class="date sub-text">on March 5th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Blake Bortles will carry the Jaguars in the upcoming years.</p>
-									<span class="date sub-text">on April 13th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Bernard Perriman our former Wide Receiver looks like the Predator from Alien vs Predator.</p>
-									<span class="date sub-text">on May 12th, 2014 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -402,33 +339,6 @@ getcomments($db);
 					<p>The UCF Recreation and Wellness Center (RWC) comprises many programs, such as Intramural Sports, Sport Clubs, Outdoor Adventure, Fitness, and Aquatics. The RWC is open to all students; paid memberships are available for non-students. The RWC offers a vast array of state-of-the-art facilities, includes a custom climbing wall, tennis courts, sand volleyball courts, a disc golf course, numerous intramural sports fields, a leisure pool, and an outdoor lap pool.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">I was hoping Michael Jordan's kid panned out but he was a bum.</p>
-									<span class="date sub-text">on March 5th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Why does this team continue to dissapoint me so much.</p>
-									<span class="date sub-text">on April 13th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Hey at least Michael Jordan used to show up court side sometimes.  That was the only plus.</p>
-									<span class="date sub-text">on May 12th, 2014 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -493,33 +403,6 @@ getcomments($db);
 					<p>Escape to The Ritz-Carlton Spa, Orlando, Grande Lakes, a luxurious spa where the soul is nourished, the spirit is revived, the body is transformed and the path to a more satisfying sense of well-being awaits. Few luxury spas in Orlando can claim treatments as homegrown as those our spa creates from the herbs grown in the resort’s organic garden, from the honey produced by our resident bees, or the citrus fruit plucked from local orchards. Revel in nature’s beauty while enjoying our signature service – a “zero gravity” massage performed as you sway gently in a rocking hammock, delivering you into true tranquility. </p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">As one of the few American soccer fans I'm glad I finally have a team in my home town.</p>
-									<span class="date sub-text">on March 5th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Perfect place for a soccer team in a college and tourist town.</p>
-									<span class="date sub-text">on April 13th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">The future is looking bright for us even though we are an expansion team.  Let's go OCSC!</p>
-									<span class="date sub-text">on May 12th, 2014 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;

@@ -5,14 +5,14 @@
     <?php 
     
     require_once "connectdb.php";
- require_once "connectdb.php";
+    require_once "connectdb.php";
 
         if(isset($_POST['comment']) && isset($_POST['rate']) && isset($_POST['event']))
             {
                 addComment($_POST['comment'],$_POST['event'],$_POST['rate'],$db);
             }
 
-getcomments($db);
+            getcomments($db);
 
     ?>
     
@@ -203,42 +203,6 @@ getcomments($db);
 					<!--Magic Reviews -->
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The Orlando Magic are my favorite basketball team!</p>
-									<span class="date sub-text">
-										on March 5th, 2015
-										<div class="glyphicon glyphicon-star">4</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Go Oladipo I'm from Indiana and he's a hometown hero.</p>
-									<span class="date sub-text">
-										on April 13th, 2015
-										<div class="glyphicon glyphicon-star">3</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Vucevic should have been an all-star!</p>
-									<span class="date sub-text">
-										on May 12th, 2014
-										<div class="glyphicon glyphicon-star">5</div>
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -304,33 +268,6 @@ getcomments($db);
 					<p>Lake Eola Park is located in the heart of Downtown Orlando. The sidewalk that circles the lake is .9 miles in length, making it easy for visitors to keep track of their walking or running distances. Other activities available to park visitors include renting swan-shaped paddle boats, feeding the live swans and other birds inhabiting the park, seeing a concert or a play in the Walt Disney Amphitheater, grabbing a bite to eat at Relax Grill on Lake Eola or relaxing amid beautiful flower beds and a spectacular view of Orlando’s skyline.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The UCF Knights football team is my favorite college sports team to follow!</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Blake Bortles will carry the Jaguars in the upcoming years.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Bernard Perriman our former Wide Receiver looks like the Predator from Alien vs Predator.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -382,33 +319,6 @@ getcomments($db);
 					<p>Dr. Howard A. Kelly Park, often called Kelly Park, is a protected area which is owned by Orange County, Florida. It lies about 17 miles (27 kilometers) northwest of Orlando. It shares some of its boundaries with Wekiwa Springs State Park and Rock Springs Run State Reserve. The Rock Springs Run, a 10-mile (16 km)-long tributary of the Wekiva River, has its source near the northern boundary of Kelly Park.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">I was hoping Michael Jordan's kid panned out but he was a bum.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Why does this team continue to dissapoint me so much.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Hey at least Michael Jordan used to show up court side sometimes.  That was the only plus.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -473,33 +383,6 @@ getcomments($db);
 					<p>Orlando Balloon Rides is the Premier Balloon Company in Central Florida and is the largest passenger ride operator on the Eastern seaboard of the United States. The well established companies of Blue Water Balloons and Orange Blossom Balloons have merged to form Orlando Balloon Rides.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">As one of the few American soccer fans I'm glad I finally have a team in my home town.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Perfect place for a soccer team in a college and tourist town.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">The future is looking bright for us even though we are an expansion team.  Let's go OCSC!</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -564,37 +447,6 @@ getcomments($db);
 					<p>Gatorland is a 110-acre (45 ha) theme park and wildlife preserve located along South Orange Blossom Trail in Orlando, Florida. It was founded by Owen Godwin in 1949, and still privately owned by his family today. Billed as the "Alligator Capital of the World," Gatorland features thousands of alligators and crocodiles, a breeding marsh with boardwalk and observation tower, reptile shows, aviary, petting zoo, swamp walk and educational programs. The park is known for buying and rescuing nuisance alligators from trappers that would otherwise be killed for their meat and skin. The Breeding Marsh area of the park was used in the filming of the 1984 movie Indiana Jones and the Temple of Doom.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">This AFL team will be the closest thing to an NFL team, so lets enjoy it.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">AFL high scoring teams like the Predators are more fun to watch than relatively slow paced NFL teams anyway.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">I wish we would sign Ricky Williams for a couple games or so.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;

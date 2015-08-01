@@ -3,6 +3,34 @@
     $name = explode(".", $file);
     $fname = $name[0];
 ?>
+<style>
+@media (max-width: 990px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+</style>
 <div class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -33,6 +61,8 @@
 								<li><a href="Booking.php">Book Hotel</a></li>
 							</ul>
 						</li>
+                        <li><a href="Search.php">Search</a></li>
+                        </li>
 						<li>
                             <?php if(!$_SESSION['NAME']) {?>
                                 <a href="Login.php">Log In</a>

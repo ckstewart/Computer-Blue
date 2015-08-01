@@ -218,42 +218,6 @@ getcomments($db);
 					<!--Magic Reviews -->
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The Orlando Magic are my favorite basketball team!</p>
-									<span class="date sub-text">
-										on March 5th, 2015
-										<div class="glyphicon glyphicon-star">4</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Go Oladipo I'm from Indiana and he's a hometown hero.</p>
-									<span class="date sub-text">
-										on April 13th, 2015
-										<div class="glyphicon glyphicon-star">3</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Vucevic should have been an all-star!</p>
-									<span class="date sub-text">
-										on May 12th, 2014
-										<div class="glyphicon glyphicon-star">5</div>
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -319,33 +283,6 @@ getcomments($db);
 					<p>The Mall at Millenia offers an extraordinary experience for those of us who call Orlando home or those visiting Orlando for business or pleasure.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The UCF Knights football team is my favorite college sports team to follow!</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Blake Bortles will carry the Jaguars in the upcoming years.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Bernard Perriman our former Wide Receiver looks like the Predator from Alien vs Predator.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -410,33 +347,6 @@ getcomments($db);
 					<p>The Florida Mall, located only minutes from the Orlando International Airport, is Central Florida’s largest and most remarkable shopping center. Welcoming more than 20 million visitors per year and spanning nearly 1.8 million square feet, The Florida Mall offers an experiential environment with more than 250 unique entertainment, retail and dining options.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">I was hoping Michael Jordan's kid panned out but he was a bum.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Why does this team continue to dissapoint me so much.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Hey at least Michael Jordan used to show up court side sometimes.  That was the only plus.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -501,33 +411,6 @@ getcomments($db);
 					<p>A place where you can elevate your dining experience at restaurants offering everything from casual fare to haute cuisine. Where you can discover a diverse collection of specialty shops. And where, when the sun sets, you can find a place pulsing with energy, music & live entertainment.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">As one of the few American soccer fans I'm glad I finally have a team in my home town.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Perfect place for a soccer team in a college and tourist town.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">The future is looking bright for us even though we are an expansion team.  Let's go OCSC!</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -592,37 +475,6 @@ getcomments($db);
 					<p>World-class restaurants, dazzling entertainment and unique shops line the waterfront at the Downtown Disney area, a fun-filled district that includes The Landing, West Side and Marketplace! Here, you can shop in the world’s largest Disney store, dine amid prehistoric creatures, bowl a game at the 30-lane alley and so much more—over 80 venues and counting, featuring complimentary parking and admission.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">This AFL team will be the closest thing to an NFL team, so lets enjoy it.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">AFL high scoring teams like the Predators are more fun to watch than relatively slow paced NFL teams anyway.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">I wish we would sign Ricky Williams for a couple games or so.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;

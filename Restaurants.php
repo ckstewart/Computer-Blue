@@ -204,42 +204,6 @@ getcomments($db);
 					<!--Magic Reviews -->
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The Orlando Magic are my favorite basketball team!</p>
-									<span class="date sub-text">
-										on March 5th, 2015
-										<div class="glyphicon glyphicon-star">4</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Go Oladipo I'm from Indiana and he's a hometown hero.</p>
-									<span class="date sub-text">
-										on April 13th, 2015
-										<div class="glyphicon glyphicon-star">3</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Vucevic should have been an all-star!</p>
-									<span class="date sub-text">
-										on May 12th, 2014
-										<div class="glyphicon glyphicon-star">5</div>
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -305,33 +269,6 @@ getcomments($db);
 					<p>Since opening in October 2007, The Ravenous Pig and chef owners James and Julie Petrakis have garnered national acclaim for culinary creations inspired by the best seasonal foods that Florida has to offer. As one of Florida’s first restaurants to champion local farmers, fishermen and artisanal purveyors, the Pig’s menu features such year-round favorites as Canaveral Shrimp ‘n Grits, Pork Porterhouse, Gruyere Biscuits, Steak Frites and its decadent Pig Tails with Chocolate Espresso Sauce dessert. Fresh Florida seafood—flounder, cobia, grouper, clams and shrimp—takes its place in the spotlight according to the season, as do veggies, greens and eggs supplied by a select group of small farmers.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The UCF Knights football team is my favorite college sports team to follow!</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Blake Bortles will carry the Jaguars in the upcoming years.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Bernard Perriman our former Wide Receiver looks like the Predator from Alien vs Predator.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -396,33 +333,6 @@ getcomments($db);
 					<p>Since 1977, Hillstone has created restaurants that seek to enliven the senses through inspired settings, graceful service, and cuisine that simply tastes delicious. We are based in Los Angeles but have extensive roots in vibrant cities and neighborhoods throughout the US. Each of our restaurants complements the unique character of its locale, seeking to be a place of relaxation, enjoyment and excitement for each of our guests.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">I was hoping Michael Jordan's kid panned out but he was a bum.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Why does this team continue to dissapoint me so much.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Hey at least Michael Jordan used to show up court side sometimes.  That was the only plus.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -487,33 +397,6 @@ getcomments($db);
 					<p>California Grill Rotisserie is proudly owned and operated by the Steffen family. We are dedicated to providing you with truly delicious food in a warm and friendly atmosphere. Our wood-fired grill and rotisserie is the central element in all our cooking. We take the freshest chickens, marinate them in natural citrus, herbs, and spices, then rotate them slowly over a wood fire. Our ribs, tri tip steak and all of our featured entrees are wood grilled, even the fresh vegetables.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">As one of the few American soccer fans I'm glad I finally have a team in my home town.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Perfect place for a soccer team in a college and tourist town.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">The future is looking bright for us even though we are an expansion team.  Let's go OCSC!</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -578,37 +461,6 @@ getcomments($db);
 					<p>Here at Cask and Larder we call ourselves a “Southern Public House” with a distinct sense of pride and place. Since the waning days of Prohibition, circa 1929, when Francis Harper took over a failed feed store near the railroad tracks in Winter Park and turned it into a tavern (yes, bribes to the local authorities might have been involved), generations of thirsty, hungry people have found their way here seeking good food, good drink, and good company.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">This AFL team will be the closest thing to an NFL team, so lets enjoy it.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">AFL high scoring teams like the Predators are more fun to watch than relatively slow paced NFL teams anyway.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">I wish we would sign Ricky Williams for a couple games or so.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;

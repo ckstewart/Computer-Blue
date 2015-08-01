@@ -4,9 +4,15 @@
     <?php 
     
     require_once "connectdb.php";
+    require_once "connectdb.php";
 
-    ?>
-    
+        if(isset($_POST['search']))
+        {
+            $sql = "select * from keywords where keywords like '%".$_POST['search']."%' OR locale like '%".$_POST['search']."%'";
+            $result = mysqli_query($db,$sql);
+        }
+            
+    ?>  
 <head>
   <title>Travel Advisor</title>
   <meta charset="utf-8">
@@ -16,7 +22,6 @@
   <script src="js/bootstrap.min.js"></script>
     
 <style>
-    
     h2 {
         position: absolute;
         right: 71%;
@@ -25,47 +30,51 @@
         font-family: inherit;
         color: firebrick;
     }
-    
-    #quote1 {
-    position: absolute;
-        top: 25%;
+    body {
+        padding-top: 65px;
     }
-    
-    #quote2 {
-    position: absolute;
-        top: 35%;
-    }
-    
-    #quote3 {
-    position: absolute;
-        top: 45%;
-    }
-    
 </style>
 </head>
 	<body>
 		<?php include("Navbar.php");?>
-    <!-- End of nav --> 
-  
-    <h2>Reviews of Travel Advisor:</h2>
-    
-   <div id = "q1"><blockquote id = "quote1">
-  <p>The most efficient source engine on the market.</p>
-  <small><cite title="Source Title">New York Times</cite></small>
-       </blockquote></div>
-    
-<div id = "q2">   
-<blockquote id = "quote2">
-  <p>Takes the stress out of booking a trip for a vacation and lets you really enjoy the experience. </p>
-  <small><cite title="Source Title">LA Times</cite></small>
-    </blockquote></div>
-    
-   <div id = "q3"><blockquote id = "quote3">
-  <p>Revolutionizes the way traveling is handled through the internet. </p>
-  <small><cite title="Source Title">Washington Post</cite></small>
-       </blockquote></div>
-    
-<script scr="js/jquery.js"></script>
-
-</body>
+        <div class="container well">
+            <form class="form-inline" role="form" method="post" action="Search.php">
+                <div class="form-group">
+                    <input class="form-control" name="search" type="textbox" placeholder="Search...">
+                    <button class="btn btn-default" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+        <?php
+            if (isset($result) && $result->num_rows > 0)
+            {
+                while ($row = $result->fetch_assoc())
+                {
+                    $sql = "select avg(stars), count(stars) from comments where place='".$row['locale']."'";
+                    $rslt = mysqli_query($db, $sql);
+                    $avg_rslt = $rslt->fetch_assoc();
+                    $avg_rat = $avg_rslt['avg(stars)'];
+                    $rat_cnt = $avg_rslt['count(stars)'];
+                    echo "<div class='container well'>";
+                        echo "<a href='".$row['site']."'>";
+                            echo "<div class='row'>";
+                                echo "<div class='col-sm-4'>";
+                                    echo "<img src='".$row['img_url']."' width=100%/>";
+                                echo "</div>";
+                                echo "<div class='container col-sm-8'>";
+                                    echo "<div class='row'>";
+                                        echo "<h1>".$row['locale']."</h1>";
+                                    echo "</div>";
+                                    echo "<div class='row'>";
+                                        echo "<h3>Rating: ".number_format($avg_rat, 2)."</h3>";
+                                        echo "<h5><small>(Ratings: ".$rat_cnt.")</small></h5>";
+                                    echo "</div>";
+                                echo "</div>";
+                            echo "</div>";
+                        echo "</a>";
+                    echo "</div>";
+                }
+            }
+        ?>
+    </body>
 </html>

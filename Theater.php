@@ -208,42 +208,6 @@ getcomments($db);
 					<!--Magic Reviews -->
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The Orlando Magic are my favorite basketball team!</p>
-									<span class="date sub-text">
-										on March 5th, 2015
-										<div class="glyphicon glyphicon-star">4</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Go Oladipo I'm from Indiana and he's a hometown hero.</p>
-									<span class="date sub-text">
-										on April 13th, 2015
-										<div class="glyphicon glyphicon-star">3</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Vucevic should have been an all-star!</p>
-									<span class="date sub-text">
-										on May 12th, 2014
-										<div class="glyphicon glyphicon-star">5</div>
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -309,33 +273,6 @@ getcomments($db);
 					<p>With so many museums and theater groups located within Loch Haven, there is always something new to see or do, including yearly events such as the Orlando International Fringe Festival, Target Family Theatre Festival, Movie in the Park, Maker Faire Orlando, The Festival of Trees, and Antiques Show and Sale.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The UCF Knights football team is my favorite college sports team to follow!</p>
-									<span class="date sub-text">on March 5th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Blake Bortles will carry the Jaguars in the upcoming years.</p>
-									<span class="date sub-text">on April 13th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Bernard Perriman our former Wide Receiver looks like the Predator from Alien vs Predator.</p>
-									<span class="date sub-text">on May 12th, 2014 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -400,33 +337,6 @@ getcomments($db);
 					<p>Mad Cow Theatre is one of Orlando’s most respected professional theatre companies presenting compelling works of theatre for a wide-range of audiences, with a passion for both classic and contemporary plays and musicals representing the best of American and World literature. </p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">I was hoping Michael Jordan's kid panned out but he was a bum.</p>
-									<span class="date sub-text">on March 5th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Why does this team continue to dissapoint me so much.</p>
-									<span class="date sub-text">on April 13th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Hey at least Michael Jordan used to show up court side sometimes.  That was the only plus.</p>
-									<span class="date sub-text">on May 12th, 2014 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -491,33 +401,6 @@ getcomments($db);
 					<p>Experience the mystery, the humor, the euphoria and the indescribable celebration of art, technology and music that is Blue Man Group at Universal Orlando® Resort. It combines science and laughter, and makes for an explosive evening of entertainment. Lose yourself in the incredible performances, the astounding music, and the captivating stage show. </p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">As one of the few American soccer fans I'm glad I finally have a team in my home town.</p>
-									<span class="date sub-text">on March 5th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Perfect place for a soccer team in a college and tourist town.</p>
-									<span class="date sub-text">on April 13th, 2015 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">The future is looking bright for us even though we are an expansion team.  Let's go OCSC!</p>
-									<span class="date sub-text">on May 12th, 2014 <div class="glyphicon glyphicon-star">4</div></span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;

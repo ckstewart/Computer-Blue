@@ -49,11 +49,11 @@ function getComments($db)
     $result = mysqli_query($db,$sql);
     $_SESSION['Waterhouse Residence'] = $result;
     
-    $sql = "SELECT * from comments where place = 'Museum of Seminole County History'";
+    $sql = "SELECT * from comments where place = 'Museum of Seminole County'";
     $result = mysqli_query($db,$sql);
-    $_SESSION['Museum of Seminole County History'] = $result;
+    $_SESSION['Museum of Seminole County'] = $result;
     
-    $sql = "SELECT * from comments where place = 'Ripley's Believe it or Not'";
+    $sql = "SELECT * from comments where place = 'Ripleys Believe it or Not'";
     $result = mysqli_query($db,$sql);
     $_SESSION['Ripleys Believe it or Not'] = $result;
     

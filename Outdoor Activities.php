@@ -204,42 +204,6 @@ getcomments($db);
 					<!--Magic Reviews -->
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The Orlando Magic are my favorite basketball team!</p>
-									<span class="date sub-text">
-										on March 5th, 2015
-										<div class="glyphicon glyphicon-star">4</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Go Oladipo I'm from Indiana and he's a hometown hero.</p>
-									<span class="date sub-text">
-										on April 13th, 2015
-										<div class="glyphicon glyphicon-star">3</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Vucevic should have been an all-star!</p>
-									<span class="date sub-text">
-										on May 12th, 2014
-										<div class="glyphicon glyphicon-star">5</div>
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -305,33 +269,6 @@ getcomments($db);
 					<p>Aktion Parks formally, The Orlando Watersports Complex is a unique watersports park designed for wakeboarding, wakeskating, wakesurfing, kneeboarding and waterskiing. Since 1999, OWC has established itself as the best place to learn how to wakeboard. OWC is set up with two full size cable systems, a two-tower system and a boat lake. The two-tower system is great for teaching new riders the basics while our beginner full size cable provides them the tools to create a solid wakeboarding foundation..</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The UCF Knights football team is my favorite college sports team to follow!</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Blake Bortles will carry the Jaguars in the upcoming years.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Bernard Perriman our former Wide Receiver looks like the Predator from Alien vs Predator.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -396,33 +333,6 @@ getcomments($db);
 					<p>We have two amazing Paddleboard and Kayak rental locations that are open 7 days a week!! The first is on the beautiful, spring fed and alligator free Lake Killarney in the heart of historic Winter Park. For a taste of "Old Florida" head down to our River Outpost at Wekiva Island and paddle board to the crystal clear Wekiva Springs!</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">I was hoping Michael Jordan's kid panned out but he was a bum.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Why does this team continue to dissapoint me so much.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Hey at least Michael Jordan used to show up court side sometimes.  That was the only plus.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -487,33 +397,6 @@ getcomments($db);
 					<p>Do you want to buy SCUBA gear in Orlando, FL? Divers Direct is your one-stop dive shop in Orlando! Our Divers Direct dive shop in Orlando is located just around the corner from Universal Studios, and close to Wet-n-Wild. When you want to buy SCUBA equipment in Orlando FL, we've got everything you need to go diving and more in stock! Come see our dive shop in Orlando today! Divers Direct’s Orlando dive shop is a prominent dive retailer in the community. Orlando Divers Direct has been serving vacationers and locals with high quality discount dive gear since 1996. Our knowledgeable and friendly staff makes Divers Direct SCUBA shop the #1 source for SCUBA equipment in Orlando. Whether you are looking for a mask and snorkel or the whole SCUBA gear setup, Divers Direct Orlando dive shop will set you up with the perfect gear that will fit your dive or snorkel needs.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">As one of the few American soccer fans I'm glad I finally have a team in my home town.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Perfect place for a soccer team in a college and tourist town.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">The future is looking bright for us even though we are an expansion team.  Let's go OCSC!</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -578,37 +461,6 @@ getcomments($db);
 					<p>The Villas of Grand Cypress is a AAA Four-Diamond Orlando luxury golf resort like no other. The Villas of Grand Cypress offers 45 holes of Jack Nicklaus’ signature design golf, luxurious villa-style accommodations, endless recreation, exquisite dining and much more all wrapped into a world-class 1,500 acre Orlando golf resort.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">This AFL team will be the closest thing to an NFL team, so lets enjoy it.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">AFL high scoring teams like the Predators are more fun to watch than relatively slow paced NFL teams anyway.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">I wish we would sign Ricky Williams for a couple games or so.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;

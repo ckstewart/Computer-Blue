@@ -218,42 +218,6 @@ getcomments($db);
 					<!--Magic Reviews -->
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The Orlando Magic are my favorite basketball team!</p>
-									<span class="date sub-text">
-										on March 5th, 2015
-										<div class="glyphicon glyphicon-star">4</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Go Oladipo I'm from Indiana and he's a hometown hero.</p>
-									<span class="date sub-text">
-										on April 13th, 2015
-										<div class="glyphicon glyphicon-star">3</div>
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Vucevic should have been an all-star!</p>
-									<span class="date sub-text">
-										on May 12th, 2014
-										<div class="glyphicon glyphicon-star">5</div>
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -261,7 +225,7 @@ getcomments($db);
     getComments($db);
 
                             
-                                while($magic = $_SESSION['Discovery Cove']->fetch_assoc())
+                                while($magic = $_SESSION['Waterhouse Residence']->fetch_assoc())
                                     {
                                     $posteremail = $magic['pemail'];
                                     $sql = "SELECT photo from users where email = '$posteremail'";
@@ -292,8 +256,8 @@ getcomments($db);
 								
                                 <select class="form-control" id="rate1" name="event">
                                     <option value="Waterhouse Residence">Waterhouse Residence</option>
-                                    <option value="Musem of Seminole County History">Musem of Seminole County History</option>
-                                    <option value="Ripley's Believe it or Not">Ripley's Believe it or Not</option>
+                                    <option value="Museum of Seminole County History">Museum of Seminole County History</option>
+                                    <option value="Ripleys Believe it or Not">Ripley's Believe it or Not</option>
                                     <option value="Museum of Military History">Museum of Military History</option>
                                     <option value="Fort Christmas Historical Park">Fort Christmas Historical Park</option>
                                 </select>
@@ -319,33 +283,6 @@ getcomments($db);
 					<p>The Museum highlights Seminole County, the historical g­ateway to interior Central Florida via the St. John's River. All artifacts housed in the Museum have been donated by residents.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">The UCF Knights football team is my favorite college sports team to follow!</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Blake Bortles will carry the Jaguars in the upcoming years.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Bernard Perriman our former Wide Receiver looks like the Predator from Alien vs Predator.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -353,7 +290,7 @@ getcomments($db);
     getComments($db);
 
                             
-                                while($magic = $_SESSION['Lake Eola Park']->fetch_assoc())
+                                while($magic = $_SESSION['Museum of Seminole County']->fetch_assoc())
                                     {
                                     $posteremail = $magic['pemail'];
                                     $sql = "SELECT photo from users where email = '$posteremail'";
@@ -384,8 +321,8 @@ getcomments($db);
 								
                                 <select class="form-control" id="rate1" name="event">
                                     <option value="Waterhouse Residence">Waterhouse Residence</option>
-                                    <option value="Musem of Seminole County History">Musem of Seminole County History</option>
-                                    <option value="Ripley's Believe it or Not">Ripley's Believe it or Not</option>
+                                    <option value="Museum of Seminole County History">Museum of Seminole County History</option>
+                                    <option value="Ripleys Believe it or Not">Ripley's Believe it or Not</option>
                                     <option value="Museum of Military History">Museum of Military History</option>
                                     <option value="Fort Christmas Historical Park">Fort Christmas Historical Park</option>
                                 </select>
@@ -410,41 +347,14 @@ getcomments($db);
 					<p>Human and animal oddities. Exotic primitive items, including authentic shrunken heads and cannibal skulls, mind-boggling visual illusions, and a fascinating array of the most unusual and weird stuff in all of Orlando, FL.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">I was hoping Michael Jordan's kid panned out but he was a bum.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Why does this team continue to dissapoint me so much.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">Hey at least Michael Jordan used to show up court side sometimes.  That was the only plus.</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
-//$_SESSION['Orlando Magic']
-    getComments($db);
+                                //$_SESSION['Orlando Magic']
+                                getComments($db);
 
                             
-                                while($magic = $_SESSION['Kelly Park']->fetch_assoc())
+                                while($magic = $_SESSION['Ripleys Believe it or Not']->fetch_assoc())
                                     {
                                     $posteremail = $magic['pemail'];
                                     $sql = "SELECT photo from users where email = '$posteremail'";
@@ -475,8 +385,8 @@ getcomments($db);
 								
                                 <select class="form-control" id="rate1" name="event">
                                     <option value="Waterhouse Residence">Waterhouse Residence</option>
-                                    <option value="Musem of Seminole County History">Musem of Seminole County History</option>
-                                    <option value="Ripley's Believe it or Not">Ripley's Believe it or Not</option>
+                                    <option value="Museum of Seminole County History">Museum of Seminole County History</option>
+                                    <option value="Ripleys Believe it or Not">Ripley's Believe it or Not</option>
                                     <option value="Museum of Military History">Museum of Military History</option>
                                     <option value="Fort Christmas Historical Park">Fort Christmas Historical Park</option>
                                 </select>
@@ -501,33 +411,6 @@ getcomments($db);
 					<p>Our mission at The Museum of Military History is to educate, increase awareness, build knowledge and understanding of the American military experience through interactive, interpretive exhibits designed for visitors of all ages. Come and visit us!</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">As one of the few American soccer fans I'm glad I finally have a team in my home town.</p>
-									<span class="date sub-text">on March 5th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">Perfect place for a soccer team in a college and tourist town.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">The future is looking bright for us even though we are an expansion team.  Let's go OCSC!</p>
-									<span class="date sub-text">on May 12th, 2014</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -535,7 +418,7 @@ getcomments($db);
     getComments($db);
 
                             
-                                while($magic = $_SESSION['Orlando Balloon Rides']->fetch_assoc())
+                                while($magic = $_SESSION['Museum of Military History']->fetch_assoc())
                                     {
                                     $posteremail = $magic['pemail'];
                                     $sql = "SELECT photo from users where email = '$posteremail'";
@@ -566,7 +449,7 @@ getcomments($db);
 								
                                 <select class="form-control" id="rate1" name="event">
                                     <option value="Waterhouse Residence">Waterhouse Residence</option>
-                                    <option value="Musem of Seminole County History">Musem of Seminole County History</option>
+                                    <option value="Museum of Seminole County History">Museum of Seminole County History</option>
                                     <option value="Ripley's Believe it or Not">Ripley's Believe it or Not</option>
                                     <option value="Museum of Military History">Museum of Military History</option>
                                     <option value="Fort Christmas Historical Park">Fort Christmas Historical Park</option>
@@ -592,37 +475,6 @@ getcomments($db);
 					<p>On December 25, 1837, a force of 2,000 U.S. Army Soldiers and Alabama Volunteers arrived near this spot to construct a fort which was aptly named, Fort Christmas. This fort was only one of over 200 forts built during the Second Seminole Indian War, 1835 - 1842. The fort houses exhibits and a video presentation on the Seminole Indian Wars.</p>
 					<div class="actionBox">
 						<ul class="commentList">
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/6" />
-								</div>
-								<div class="commentText">
-									<p class="">This AFL team will be the closest thing to an NFL team, so lets enjoy it.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/7"/>
-								</div>
-								<div class="commentText">
-									<p class="">AFL high scoring teams like the Predators are more fun to watch than relatively slow paced NFL teams anyway.</p>
-									<span class="date sub-text">on April 13th, 2015</span>
-								</div>
-							</li>
-							<li>
-								<div class="commenterImage">
-									<img src="http://lorempixel.com/50/50/people/9" />
-								</div>
-								<div class="commentText">
-									<p class="">I wish we would sign Ricky Williams for a couple games or so.</p>
-									<span class="date sub-text">
-									on March 5th, 2015
-									</span>
-								</div>
-							</li>
                             <?php 
 
                                 //$orlando;
@@ -630,7 +482,7 @@ getcomments($db);
     getComments($db);
 
                             
-                                while($magic = $_SESSION['Gatorland']->fetch_assoc())
+                                while($magic = $_SESSION['Fort Christmas Historical Park']->fetch_assoc())
                                     {
                                     $posteremail = $magic['pemail'];
                                     $sql = "SELECT photo from users where email = '$posteremail'";
@@ -661,7 +513,7 @@ getcomments($db);
 								
                                 <select class="form-control" id="rate1" name="event">
                                     <option value="Waterhouse Residence">Waterhouse Residence</option>
-                                    <option value="Musem of Seminole County History">Musem of Seminole County History</option>
+                                    <option value="Museum of Seminole County History">Museum of Seminole County History</option>
                                     <option value="Ripley's Believe it or Not">Ripley's Believe it or Not</option>
                                     <option value="Museum of Military History">Museum of Military History</option>
                                     <option value="Fort Christmas Historical Park">Fort Christmas Historical Park</option>
