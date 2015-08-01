@@ -73,7 +73,24 @@ if(isset($_POST['nickelodeonrate']))
         <div class="col-md-4">
             
             <img src="img/rosenInn.jpg" width="90%" height="230px" style="margin-left:20px; margin-right:auto;">
-            <h3 align="center">Book The Rosen Inn at Pointe Orlando</h3>
+            <h3 align="center">The Rosen Inn at Pointe Orlando</h3>
+            
+            <h5 align="center">
+            <small>
+            <?php
+                $sql_avg = "select avg(rating) from bookings where hotel = 'Rosen Inn at Pointe Orlando'";
+                $avg_rate = mysqli_query($db,$sql_avg);
+                $avg = $avg_rate->fetch_assoc();
+
+                $sql_count = "select count(rating) from bookings where hotel = 'Rosen Inn at Pointe Orlando'";
+                $rate_cnt = mysqli_query($db, $sql_count);
+                $cnt = $rate_cnt->fetch_assoc();
+                //echo print_r($arr);
+                echo "Rating: ".number_format($avg['avg(rating)'], 2);
+                echo ' (Ratings: '.$cnt['count(rating)'].')';
+            ?>
+            </small>
+            </h5>
             <h5 align="center">Close to</h5>
             <ul>
             <li>The Ice Bar</li>
@@ -118,6 +135,22 @@ $booked=$booked->fetch_assoc();
             
             <img src="img/hardrock.jpg" width="90%" height="230px" style="margin-left:20px; margin-right:auto;">
             <h3 align="center">Hard Rock Hotel At Universal Orlando Resort</h3>
+            <h5 align="center">
+            <small>
+            <?php
+                $sql_avg = "select avg(rating) from bookings where hotel = 'Hard Rock Hotel At Universal Orlando Resort'";
+                $avg_rate = mysqli_query($db,$sql_avg);
+                $avg = $avg_rate->fetch_assoc();
+
+                $sql_count = "select count(rating) from bookings where hotel = 'Hard Rock Hotel At Universal Orlando Resort'";
+                $rate_cnt = mysqli_query($db, $sql_count);
+                $cnt = $rate_cnt->fetch_assoc();
+                //echo print_r($arr);
+                echo "Rating: ".number_format($avg['avg(rating)'], 2);
+                echo ' (Ratings: '.$cnt['count(rating)'].')';
+            ?>
+            </small>
+            </h5>
             <h5 align="center">Close to</h5>
             <ul>
             <li>The Ice Bar</li>
@@ -159,6 +192,22 @@ $booked2=$booked2->fetch_assoc();
             
             <img src="img/nickelodeon.jpg" width="90%" height="230px" style="margin-left:20px; margin-right:auto;">
             <h3 align="center">Nickelodeon Suites Resort</h3>
+            <h5 align="center">
+            <small>
+            <?php
+                $sql_avg = "select avg(rating) from bookings where hotel = 'Nickelodeon Suites Resort'";
+                $avg_rate = mysqli_query($db,$sql_avg);
+                $avg = $avg_rate->fetch_assoc();
+
+                $sql_count = "select count(rating) from bookings where hotel = 'Nickelodeon Suites Resort'";
+                $rate_cnt = mysqli_query($db, $sql_count);
+                $cnt = $rate_cnt->fetch_assoc();
+                //echo print_r($arr);
+                echo "Rating: ".number_format($avg['avg(rating)'], 2);
+                echo ' (Ratings: '.$cnt['count(rating)'].')';
+            ?>
+            </small>
+            </h5>
             <h5 align="center">Close to</h5>
             <ul>
             <li>The Ice Bar</li>
