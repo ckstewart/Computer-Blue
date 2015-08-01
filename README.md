@@ -1,2 +1,0 @@
-# Computer-Blue
-Class project
