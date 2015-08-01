@@ -91,7 +91,7 @@ if (isset($_POST['submit']))
                         <li>
                             <?php 
                             if (!$_SESSION['NAME']) {?> 
-                                <a href="Signup.php">Sign Up</a> <?php }
+                                <a href="signup.php">Sign Up</a> <?php }
                             ?>
                         </li>
 						<li class = "aus"><a href = "">Currently Viewing: Your Profile</a></li>

@@ -184,7 +184,7 @@ getcomments($db);
                         <li>
                             <?php 
                             if (!$_SESSION['NAME']) {?> 
-                                <a href="Signup.php">Sign Up</a> <?php }
+                                <a href="signup.php">Sign Up</a> <?php }
                             ?>
                         </li>
 						<li class = "aus"><a href = "">Currently Viewing: Restaurants</a></li>
@@ -298,7 +298,7 @@ getcomments($db);
     getComments($db);
 
                             
-                                while($magic = $_SESSION['Waterhouse Residence']->fetch_assoc())
+                                while($magic = $_SESSION['Luma on Park']->fetch_assoc())
                                     {
                                     $posteremail = $magic['pemail'];
                                     $sql = "SELECT photo from users where email = '$posteremail'";

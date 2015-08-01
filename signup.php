@@ -204,7 +204,7 @@
                                 <a href="logout.php">Log Out</a>
                             <?php } ?>
                         </li>
-						<li><a href="Signup.php">Sign Up</a></li>
+						<li><a href="signup.php">Sign Up</a></li>
 						<li class = "aus"><a href = "">Currently Viewing: Art and History</a></li>
 					</ul>
 				</div>

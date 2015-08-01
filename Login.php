@@ -209,7 +209,7 @@
 						<li>
                             <?php 
                             if (!$_SESSION['NAME']) {?> 
-                                <a href="Signup.php">Sign Up</a> <?php }
+                                <a href="signup.php">Sign Up</a> <?php }
                             ?>
                         </li>
 						<li class = "aus"><a href = "">Currently Viewing: Art and History</a></li>
@@ -308,7 +308,7 @@
 
     <?php if($_SESSION['NAME'])
     {//echo 'we got a name'.$_SESSION['NAME']; 
-        header('Location: home.php');}?>
+        header('Location: Home.php');}?>
     
 </body>
 </html>

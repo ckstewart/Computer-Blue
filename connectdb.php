@@ -1,17 +1,17 @@
 <?php
-
 require_once 'functions.php';
 
-$dbhost = "localhost";
-$dbname = 'computerblue';
-$dbuser = "root";
-$dbpass = "flyers62";
+$servername = 'localhost';
+$username = 'lricha35';
+$password = 'mysqlpass';
+$dbname = 'lricha35';
 
-$db = new mysqli($dbhost,$dbuser,$dbpass,$dbname) or die("unable to connect");
+// Create connection
+$db = new mysqli($servername, $username, $password, $dbname);
 
-//echo "connect sucessful";
-
-
-
-
+// Check connection
+if ($db->connect_error) {
+    die('Connection failed: ' . $db->connect_error);
+} 
+echo 'Connected successfully';
 ?>
