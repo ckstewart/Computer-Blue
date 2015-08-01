@@ -127,9 +127,9 @@ function getComments($db)
     $_SESSION['Gatorland'] = $result;
     
     //shopping
-    $sql = "SELECT * from comments where place = 'Orlando International Premium Outlets'";
+    $sql = "SELECT * from comments where place = 'Orlando International Pre'";
     $result = mysqli_query($db,$sql);
-    $_SESSION['Orlando International Premium Outlets'] = $result;
+    $_SESSION['Orlando International Pre'] = $result;
     
     $sql = "SELECT * from comments where place = 'Mall at Millenia'";
     $result = mysqli_query($db,$sql);

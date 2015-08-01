@@ -225,7 +225,7 @@ getcomments($db);
     getComments($db);
 
                             
-                                while($magic = $_SESSION['Orlando International Premium Outlets']->fetch_assoc())
+                                while($magic = $_SESSION['Orlando International Pre']->fetch_assoc())
                                     {
                                     $posteremail = $magic['pemail'];
                                     $sql = "SELECT photo from users where email = '$posteremail'";
@@ -255,7 +255,7 @@ getcomments($db);
                             <div class="form-group">
 								
                                 <select class="form-control" id="rate1" name="event">
-                                    <option value="Orlando International Premium Outlets">Orlando International Premium Outlets</option>
+                                    <option value="Orlando International Pre">Orlando International Premium Outlets</option>
                                     <option value="Mall at Millenia">Mall at Millenia</option>
                                     <option value="Florida Mall">Florida Mall</option>
                                     <option value="Pointe Orlando">Pointe Orlando</option>
@@ -320,7 +320,7 @@ getcomments($db);
                             <div class="form-group">
 								
                                 <select class="form-control" id="rate1" name="event">
-                                    <option value="Orlando International Premium Outlets">Orlando International Premium Outlets</option>
+                                    <option value="Orlando International Pre">Orlando International Premium Outlets</option>
                                     <option value="Mall at Millenia">Mall at Millenia</option>
                                     <option value="Florida Mall">Florida Mall</option>
                                     <option value="Pointe Orlando">Pointe Orlando</option>
@@ -384,7 +384,7 @@ getcomments($db);
                             <div class="form-group">
 								
                                 <select class="form-control" id="rate1" name="event">
-                                    <option value="Orlando International Premium Outlets">Orlando International Premium Outlets</option>
+                                    <option value="Orlando International Pre">Orlando International Premium Outlets</option>
                                     <option value="Mall at Millenia">Mall at Millenia</option>
                                     <option value="Florida Mall">Florida Mall</option>
                                     <option value="Pointe Orlando">Pointe Orlando</option>
@@ -448,7 +448,7 @@ getcomments($db);
                             <div class="form-group">
 								
                                 <select class="form-control" id="rate1" name="event">
-                                    <option value="Orlando International Premium Outlets">Orlando International Premium Outlets</option>
+                                    <option value="Orlando International Pre">Orlando International Premium Outlets</option>
                                     <option value="Mall at Millenia">Mall at Millenia</option>
                                     <option value="Florida Mall">Florida Mall</option>
                                     <option value="Pointe Orlando">Pointe Orlando</option>

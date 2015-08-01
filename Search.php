@@ -50,7 +50,8 @@
             {
                 while ($row = $result->fetch_assoc())
                 {
-                    $sql = "select avg(stars), count(stars) from comments where place='".$row['locale']."'";
+                    $loc_truc = substr($row['locale'], 0, 25);
+                    $sql = "select avg(stars), count(stars) from comments where place='".$loc_truc."'";
                     $rslt = mysqli_query($db, $sql);
                     $avg_rslt = $rslt->fetch_assoc();
                     $avg_rat = $avg_rslt['avg(stars)'];
