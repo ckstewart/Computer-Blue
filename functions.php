@@ -234,14 +234,16 @@ function getComments($db)
 
 function addComment($comment,$place,$rate,$db)
 {
-    date_default_timezone_set('UTC');
-    
-    $date =date("F j, Y ");
-    $name = ucfirst($_SESSION['NAME']);
-    $email = ucfirst($_SESSION['EMAIL']);
-    $sql = "INSERT INTO comments (user,comment,stars,place,cdate,pemail) values ('$name','$comment','$rate','$place','$date','$email')";
-    $result = mysqli_query($db,$sql) or die ("Could not save comment");
-    
+    if (isset($_SESSION['EMAIL']))
+    {
+        date_default_timezone_set('UTC');
+
+        $date =date("F j, Y ");
+        $name = ucfirst($_SESSION['NAME']);
+        $email = ucfirst($_SESSION['EMAIL']);
+        $sql = "INSERT INTO comments (user,comment,stars,place,cdate,pemail) values ('$name','$comment','$rate','$place','$date','$email')";
+        $result = mysqli_query($db,$sql) or die ("Could not save comment");
+    }
     
 }
 
