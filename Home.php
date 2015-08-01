@@ -33,7 +33,7 @@
 		</style>
 	</head>
 	<body>
-		<?php include("Navbar.php");?>
+		<?php include 'Navbar.php';?>
         <div id = "myCarousel3" class = "carousel slide container">
 			<ol class = "carousel-indicators">
 				<li data-target = "#myCarousel3" data-slide-to = "0" class = "active"></li>

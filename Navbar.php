@@ -1,7 +1,7 @@
 <?php
     $file = basename($_SERVER['PHP_SELF']);
-    $name = explode('.', $file)[0];
-    $name = ucwords($name, " ");
+    $name = explode(".", $file);
+    $fname = $name[0];
 ?>
 <div class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar navbar-default navbar-fixed-top">
@@ -48,7 +48,7 @@
                                 <a href="signup.php">Sign Up</a> <?php }
                             ?>
                         </li>
-						<li class = "aus"><a href = "">Currently Viewing: <?php echo $name?></a></li>
+						<li class = "aus"><a href = "">Currently Viewing: <?php echo $fname;?></a></li>
 					</ul>
 				</div>
 			</div>
